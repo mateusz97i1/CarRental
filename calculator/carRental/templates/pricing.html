@@ -1,0 +1,55 @@
+{% extends 'mainRentCar.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pricing</title>
+</head>
+<body>
+    
+    {% block main %}
+    <div class="aboutCarsTitle">
+        <p>
+            Dear valued customers, we are thrilled to announce an 
+            exciting update at EliteCar Rental Company! Starting next month,
+             we will be introducing transparent and competitive car pricing to 
+             enhance your rental experience. <br> Say goodbye to hidden fees and hello 
+             to a seamless and budget-friendly journey with EliteCar Rental.</p>
+    </div>
+    
+    <section class="pricingTable md:self-center md:w-2/4">
+        <h1>Car Rental Prices</h1>
+        <table>
+            <tr>
+                <th>rental time</th>
+                <th>price</th>
+            </tr>
+            <tr>
+                <td>day</td>
+                <td>250$</td>
+            </tr>
+            <tr>
+                <td>weekend</td>
+                <td>450$</td>
+            </tr>
+            <tr>
+                <td>week</td>
+                <td>850$</td>
+            </tr>
+            <tr>
+                <td>month</td>
+                <td>2250$</td>
+            </tr>
+        </table>
+    </section>
+    <section class="localization">
+        <h2>you can find us here:</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40793.18285471275!2d21.4111682096125!3d50.28121366759504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d6b4ff4d294d7%3A0x19cc789a16d17201!2sMielec!5e0!3m2!1spl!2spl!4v1690718829484!5m2!1spl!2spl"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    {% endblock main %}
+        
+</body>
+</html>

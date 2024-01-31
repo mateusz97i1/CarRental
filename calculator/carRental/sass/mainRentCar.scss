@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+        font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+
+    }
+header{
+
+    .banner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .logo{
+            
+            width: 150px;
+            height: 50px;
+            z-index: 100;
+            background-image: url(../static/elliteDriveLogo.png);
+            background-size: cover;
+            background-position: center;
+
+            a{
+
+                position: absolute;
+                width: 150px;
+                height: 50px;
+
+            }
+        }
+
+        .burgerMenu{
+            width: 40px;
+            height: 40px;
+            z-index: 100;
+            background-image: url(../static/menuClicked.png);
+            background-size: cover;
+            background-position: center;
+            margin-right: 20px;
+        }
+
+        .burgerMenuClose{
+            width: 35px;
+            height: 35px;
+            background-image: url(../static/close.png);
+        }
+
+        
+
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        background-color: #FCA311;
+       
+    }
+
+
+    
+    }
+section{
+
+   
+
+    .burgerMenuList{
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        background-color: #000000;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+        
+        
+
+        ul{
+            text-align: center;
+            
+            
+            li{
+                padding:  15px  15px ;
+                border: #E5E5E5 solid 1px;
+                border-collapse: collapse;
+                cursor: pointer;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: #E5E5E5;
+            text-transform: capitalize;
+            
+            
+            
+        }
+    }
+
+    .rentCarForm{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40vh;
+        background-color: #14213D;
+        border: solid 1px black;
+        flex-wrap: wrap;
+
+        .describe{
+            display: flex;
+            flex-direction: column;
+            color: #E5E5E5;
+            height: fit-content;
+            
+            h1 {
+                padding: 10px 10px;
+                text-transform: capitalize;
+            }
+
+            p{
+                padding: 5px 5px;
+                text-transform: capitalize;
+            }
+        }
+
+        .form{
+
+        }
+    }
+
+    .burgerMenuListOpen{
+        display: flex;
+        z-index: 101;
+    }
+
+}
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e5e5;
+    padding-bottom: 50px;
+
+    h2{
+        text-transform: capitalize;
+        padding: 10px 10px;
+    }
+
+
+    .ourCars{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        width: 100%;
+        height: 40vh;
+        background-color: #e5e5e5;
+        
+        justify-content: flex-start;
+        align-items: center;
+        
+        
+        
+                ul{
+                    list-style-type: none;
+                    transition: transform 0.3s ease;
+                    display: flex;
+
+                }
+
+            .carBoxOffer{
+                display: flex;
+                flex-direction: column;
+                background-image: url('/static/bmw235i.PNG');
+                background-repeat: no-repeat;
+                background-size: 280px 220px;
+                background-position-y: -20px;
+                border: solid 1px black;
+                border-radius: 5px;
+                inset: 0;
+                width: 280px;
+                height: 280px;
+                
+                justify-content: flex-end;
+                margin-right: 40px;
+                margin-left: 40px;
+
+
+                
+
+                    .viewButton{
+                        
+                        display: flex;
+                        flex-direction: column;
+                        align-self: flex-end;
+                        width: 280px;
+                        height: 105px;
+                        background-color: #14213D;   
+                        justify-content: center;              
+                        border: #000000 solid 1px;  
+                        align-items: center;
+                        border-radius: 5px;
+                        color: #E5E5E5;    
+
+                        #carModel{
+                            margin-left: 30px;
+                            align-self: flex-start;
+                            font-weight: bold;
+                            font-size: 1.4rem;
+                            text-transform: capitalize;
+                        }
+
+                        #carPower{
+                            margin-left: 30px;
+                            align-self: flex-start;
+                            text-transform: capitalize;
+
+                        }
+
+                        #carDetails{
+                            margin-left: 30px;
+                            align-self: flex-start;
+                            text-transform: uppercase;
+                            padding-bottom: 5px;
+                            font-size: 0.8rem;
+
+                        }
+
+                            button{
+
+                                background: linear-gradient(135deg, #f5f5f5, #ffffff); /* Milk gradient background */
+                                border: #14213D solid 1px;
+                                width: 150px;
+                                height: 30px;
+                                justify-self: center;
+                                border-radius: 5px; 
+                                                   
+
+                            }
+
+                            button:hover{
+                                opacity: 0.6;
+                            }
+                    }
+
+
+        }
+
+        .carBoxOffer.two{
+            background-image: url('/static/supra.jpg');
+        }
+
+        .carBoxOffer.three{
+            background-image: url('/static/mustang.jpg');
+
+        }
+
+
+        .carBoxOffer.four{
+            background-image: url('/static/rs3.jpg');
+        }
+
+
+        .carBoxOffer.five{
+            background-image: url('/static/g63.jpg');
+        }
+
+
+        @mixin arrows{
+            display: flex;
+            flex-direction: row;
+            width: 25px;
+            height: 40px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        .arrowForward{
+            @include arrows();
+           right: 5px;
+           background-image: url('/static/arrow.png');
+           background-position-x: -10px;
+           transform: rotate(180deg)
+        }
+
+        .arrowBack{
+            @include arrows();
+            left: 5px;
+            background-image: url('/static/arrow.png');
+            background-position-x: -10px;
+        }
+
+
+    }
+
+
+
+}
+
+.countDown{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    background-color: #E5E5E5;
+    align-items: center;
+    justify-content: space-around;
+   
+
+    .countDown.box1{
+        text-transform: capitalize;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80%;
+        background-color: #14213d;
+        width: 80%;
+        color: #E5E5E5;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+section{
+
+    .aboutCompany{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        background-color: #14213d;
+        border: solid 1px black;
+        color: #E5E5E5;
+        text-align: center;
+
+        p{
+            
+        }
+
+        h3{
+            padding: 15px 15px;
+           
+        }
+
+        h4{
+            padding-bottom: 15px;
+             padding-top: 15px;
+        }
+
+      
+        #one{
+            width: 80%;
+            padding-bottom: 15px;
+            margin: 0;
+            align-self: center;
+            }
+
+        #two{
+            width: 80%;
+            padding: 0;
+            margin: 0;
+            align-self: center;
+            padding-bottom: 15px;
+        }
+
+    }
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+      
+    align-self: flex-end;
+        
+
+        p{
+            color: #E5E5E5;
+            text-align: center;
+            padding-bottom: 5px;
+            
+        }
+
+        .publicMedia{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 10vh;
+            margin-top: 10px;
+            
+            @mixin mediaIcons{
+                width: 30px;
+                height: 30px;
+                background-color: #E5E5E5;
+                margin: 0 10px 0 10px;
+                cursor: pointer;
+                
+            }
+
+            #publicMedia1{
+                @include mediaIcons();
+                background-image: url('/static/insta.png');
+            }
+
+            #publicMedia2{
+                @include mediaIcons();
+                background-image: url('/static/fb.png');
+            }
+
+            #publicMedia3{
+                @include mediaIcons();
+                background-image: url('/static/snap.png');
+            }
+        }
+        
+}

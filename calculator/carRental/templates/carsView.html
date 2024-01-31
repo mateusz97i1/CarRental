@@ -1,0 +1,285 @@
+{% extends 'mainRentCar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'ourcars.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    
+    {% block main %}
+        <div class="aboutCarsTitle"><p>The company offers a diverse range of cars, featuring top-quality vehicles with innovative technology and advanced features.
+            <br> With a focus on customer satisfaction, they ensure a reliable and enjoyable driving experience for all their clients.</p>
+        </div>
+
+        <section class="pt-5 allCars md:self-center md:w-2/4">
+
+            <div id="bmw2" class="carSpecs ">
+                <img src="{% static 'bmw235i.png' %}" alt="">
+                <div class="shortDetails"> 
+                    <p id="carModel">bmw 2-series</p> 
+                    <p id="carPower">306hp</p>
+                    <p id="carDetails">rwd 3.0L r6</p>
+                </div>
+            </div>
+
+            <div class="fullSpec">
+                <div class="detailRowOne">
+                        <div class="detail">
+                            <img src="{% static 'manual-transmission.png' %}" alt="">
+                            <p>automatic</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'distance-limit.png' %}" alt="">
+                            <p>no-limit</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'air-conditioner.png' %}" alt="">
+                            <p>yes</p>
+                        </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'carDoors.png' %}" alt="">
+                        <p>5-doors</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'gas-station.png' %}" alt="">
+                        <p>8l/100km</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'luggage.png' %}" alt="">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'user.png' %}" alt="">
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div class="priceTag">
+                    <p>from 250$..</p>
+                </div>
+                
+
+            </div>
+
+            <div id="supra" class="carSpecs">
+                <img src="{% static 'supra.jpg' %}" alt="">
+                <div class="shortDetails"> 
+                    <p id="carModel">toyota supra</p> 
+                    <p id="carPower">346hp</p>
+                    <p id="carDetails">rwd 3.0L r6</p>
+                </div>
+            </div>
+
+            <div class="fullSpec">
+                <div class="detailRowOne">
+                        <div class="detail">
+                            <img src="{% static 'manual-transmission.png' %}" alt="">
+                            <p>automatic</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'distance-limit.png' %}" alt="">
+                            <p>no-limit</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'air-conditioner.png' %}" alt="">
+                            <p>yes</p>
+                        </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'carDoors.png' %}" alt="">
+                        <p>5-doors</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'gas-station.png' %}" alt="">
+                        <p>8l/100km</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'luggage.png' %}" alt="">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'user.png' %}" alt="">
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div class="priceTag">
+                    <p>from 250$..</p>
+                </div>
+
+            </div>
+
+
+            <div id="amgG" class="carSpecs">
+                <img src="{% static 'g63.jpg' %}" alt="">
+                <div class="shortDetails"> 
+                    <p id="carModel">mercedes-benz</p> 
+                    <p id="carPower">556hp</p>
+                    <p id="carDetails">awd 4.4L v8</p>
+                </div>
+            </div>
+
+            <div class="fullSpec">
+                <div class="detailRowOne">
+                        <div class="detail">
+                            <img src="{% static 'manual-transmission.png' %}" alt="">
+                            <p>automatic</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'distance-limit.png' %}" alt="">
+                            <p>no-limit</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'air-conditioner.png' %}" alt="">
+                            <p>yes</p>
+                        </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'carDoors.png' %}" alt="">
+                        <p>5-doors</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'gas-station.png' %}" alt="">
+                        <p>8l/100km</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'luggage.png' %}" alt="">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'user.png' %}" alt="">
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div class="priceTag">
+                    <p>from 250$..</p>
+                </div>
+
+            </div>
+
+            <div id="mustang" class="carSpecs">
+                <img src="{% static 'mustang.jpg' %}" alt="">
+                <div class="shortDetails"> 
+                    <p id="carModel">ford mustang</p> 
+                    <p id="carPower">416hp</p>
+                    <p id="carDetails">rwd 5.0L v8</p>
+                </div>
+            </div>
+
+            <div class="fullSpec">
+                <div class="detailRowOne">
+                        <div class="detail">
+                            <img src="{% static 'manual-transmission.png' %}" alt="">
+                            <p>automatic</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'distance-limit.png' %}" alt="">
+                            <p>no-limit</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'air-conditioner.png' %}" alt="">
+                            <p>yes</p>
+                        </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'carDoors.png' %}" alt="">
+                        <p>5-doors</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'gas-station.png' %}" alt="">
+                        <p>8l/100km</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'luggage.png' %}" alt="">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'user.png' %}" alt="">
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div class="priceTag">
+                    <p>from 250$..</p>
+                </div>
+
+            </div>
+
+
+            <div id="audirs3" class="carSpecs">
+                <img src="{% static 'rs3.jpg' %}" alt="">
+                <div class="shortDetails"> 
+                    <p id="carModel">audi rs3</p> 
+                    <p id="carPower">380hp</p>
+                    <p id="carDetails">awd 2.5L r5</p>
+                </div>
+            </div>
+
+            <div class="fullSpec">
+                <div class="detailRowOne">
+                        <div class="detail">
+                            <img src="{% static 'manual-transmission.png' %}" alt="">
+                            <p>automatic</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'distance-limit.png' %}" alt="">
+                            <p>no-limit</p>
+                        </div>
+                        <div class="detail gearbox">
+                            <img src="{% static 'air-conditioner.png' %}" alt="">
+                            <p>yes</p>
+                        </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'carDoors.png' %}" alt="">
+                        <p>5-doors</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'gas-station.png' %}" alt="">
+                        <p>8l/100km</p>
+                    </div>
+                    <div class="detail gearbox">
+                        <img src="{% static 'luggage.png' %}" alt="">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="detailRowOne">
+                    <div class="detail">
+                        <img src="{% static 'user.png' %}" alt="">
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div class="priceTag">
+                    <p>from 250$..</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        
+
+
+    {% endblock main %}
+        
+</body>
+</html>

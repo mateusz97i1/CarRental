@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "tailwindcss -i carRental/static/tw/tailwind-input.css -o carRental/static/output.css --watch "
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "tailwindcss": "^3.3.3"
+  }
+}
