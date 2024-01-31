@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #E5E5E5;
+}
+section .faq {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #E5E5E5;
+  padding-top: 15px;
+}
+section .faq .question {
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  padding: 5px 5px;
+  justify-content: space-between;
+  width: 95%;
+  align-self: center;
+}
+section .faq .question p {
+  line-height: 1.6;
+}
+section .faq .question .arrowImg {
+  display: flex;
+  flex-direction: row;
+  transform: rotate(-90deg);
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+section .faq .answer {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  width: 90%;
+}
+section .faq .answer p {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+@keyframes arrowMoveUp {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes arrowMoveDown {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+@keyframes answerMoveDown {
+  from {
+    transform: translateY(-30%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes answerMoveUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+section .faq .rotate {
+  animation: arrowMoveUp 0.3s forwards;
+}
+section .faq .rotateDown {
+  animation: arrowMoveDown 0.2s forwards;
+}
+section .faq .answer-moveDown {
+  animation: answerMoveDown 0.5s linear;
+}
+section .faq .answer-moveUp {
+  animation: answerMoveUp 0.5s linear;
+}
+section .answer.active {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+section .last {
+  padding-bottom: 100px;
+}/*# sourceMappingURL=faq.css.map */
